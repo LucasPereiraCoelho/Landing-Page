@@ -1,0 +1,343 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+
+.logo > img{
+    height: 40px;
+    width: 40px;
+}
+
+.navbar{
+    background-color: #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.main{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../assets/images/london.jpg');
+    background-size: 100% 800px;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.viagem{
+    background-color: white;
+    width: 700px;
+    height: 300px;
+}
+
+.header-viagem{
+    display: flex;
+    width: 100%;
+    height: 40px;
+    background-color: aqua;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.main-viagem{
+    padding: 30px;
+}
+
+.main-viagem > h1{
+    margin-bottom: 10px;
+}
+
+.button-viagem{
+    position: relative;
+    bottom: -40px;
+    left: -176px;
+
+}
+
+.oferta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+
+}
+
+.oferta>h1{
+    margin-bottom: 10px;
+    position: relative;
+    left: -507px;
+}
+
+.oferta>h3{
+    margin-bottom: 20px;
+    position: relative;
+    left: -528px;
+}
+
+.grid-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.boxes{
+    display: grid;
+    grid-template-columns: 590px 300px 300px;
+    grid-template-rows: 250px 250px;
+    grid-template-areas: 
+    "cinque ny san-francisco"
+    "cinque pisa paris";
+    gap: 10px;
+}
+
+
+.cinque{
+    grid-area: cinque;
+    background-image: url('../assets/images/cinqueterre.jpg');
+}
+
+.paris{
+    grid-area: paris;
+    background-image: url('../assets/images/paris.jpg');
+}
+
+.ny{
+    grid-area: ny;
+    background-image: url('../assets/images/newyork.jpg');
+}
+
+.san-francisco{
+    grid-area: san-francisco;
+    background-image: url('../assets/images/sanfran.jpg');
+}
+
+.pisa{
+    grid-area: pisa;
+    background-image: url('../assets/images/pisa.jpg');
+}
+
+
+.natureza{
+    height: 100vh;
+    background-color: white;
+    padding: 50px 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.natureza > h1{
+    margin-bottom: 10px;
+    position: relative;
+    left: -490px;
+
+}
+
+.natureza > h3{
+    margin-bottom: 20px;
+    position: relative;
+    left: -530px;
+
+}
+
+.card1{
+    display: flex;
+    flex-direction: column;
+    background-color: #ddd;
+    width: 600px;
+    height: 100%;
+    padding: 10px;
+    gap: 10px;
+}
+
+.card2{
+    display: flex;
+    flex-direction: column;
+    background-color: #ddd;
+    width: 600px;
+    height: 100%;
+    padding: 10px;
+    gap: 10px;
+
+}
+
+.card1 > button{
+    height: 50px;
+    width: 200px;
+}
+
+.card1 > img{
+    width: 100%;
+    height: 300px;
+}
+
+.card2 > button{
+    height: 50px;
+    width: 200px;
+}
+
+.card2 > img{
+    width: 100%;
+    height: 300px;
+}
+
+.container-cards{
+    display: flex;
+    gap: 10px;
+    width: 1200px;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.contato{
+    display: flex;
+    justify-content: center;
+}   
+
+.card-email{
+    background-color: gray;
+    width: 1200px;
+    padding-top: 20px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.card-email > h1{
+    margin-bottom: 20px;
+}
+
+.nossos-emails{
+    margin-bottom: 20px;
+}
+
+.card-email > button{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 100px;
+    height: 40px;
+}
+
+.card-email > input{
+    width: 90%;
+}
+
+.contato-info{
+    display: flex;
+    width: 1200px;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-left: 20px;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 70px;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    padding: 20px;
+}
+
+.icons{
+    display: flex;
+}
+
+
+@media(max-width:768px){
+    .navbar{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+}
+
+@media(max-width:450px) {
+
+    .container-cards{
+        flex-direction: column;
+    }
+
+    .main{
+        background: none;
+    }
+
+    .container-cards{
+        gap: 50px;
+    }
+
+    .card1, .card2{
+        width: 250px;
+    }
+
+    .card1 > img, .card2 > img{
+        height: 150px;
+    }
+
+    .boxes {
+        margin-bottom: 100px;
+
+        grid-template-areas:
+
+        "cinque"
+
+        "ny"
+
+        "san-francisco"
+
+        "pisa"
+
+        "paris"
+
+        ;
+        grid-template-columns: 250px;
+        grid-template-rows: 250px 250px 250px 250px 250px;
+
+    }
+    .card-email{
+        margin-top: 150px;
+        width: 100%;
+    }
+
+    .container-main, .contato, .contato-info, .footer{
+        width: 100%;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
